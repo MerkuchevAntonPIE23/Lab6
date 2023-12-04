@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        function entering_a_number() {
+            let number = prompt('Введите число')
+            return number
+        }
+
+        function sum_of_odd_numbers(number) {
+            let string_number = String(number)
+            let sum_numbers = 0
+            for (i = 0; i < string_number.length; i++) {
+                if (Number(string_number[i]) % 2 == 1) {
+                    sum_numbers += Number(string_number[i])
+                }
+            }
+            return sum_numbers
+        }
+
+        function number_output(number) {
+            alert(number)
+        }
+
+        number_output(sum_of_odd_numbers(entering_a_number()))
+    </script>
+</body>
+</html>
